@@ -15,7 +15,7 @@
             padding: 20px;
         }
         h1 {
-             color: #ff8c00;
+            color: #ff8c00;
         }
         p {
             line-height: 1.5;
@@ -26,6 +26,32 @@
         }
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Added styles for sponsors section */
+        .sponsor-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: center; /* Center-align the sponsors */
+        }
+
+        .sponsor {
+            width: 48%; /* Adjust the width as needed */
+            box-sizing: border-box;
+            margin-bottom: 2%; /* Adjust the margin as needed */
+        }
+
+        .sponsor img {
+            width: 100%; /* Make sure the image takes 100% width of its container */
+            max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        @media (max-width: 600px) {
+            .sponsor {
+                width: 100%; /* Make the sponsors take full width on smaller screens */
+            }
         }
     </style>
 </head>
@@ -61,59 +87,30 @@
     <p>To submit your form and claim your spot in the tour, click here: <a href="https://bit.ly/GilbertsGhostlyContestEntryForm">Gilberts Ghostly Haunted Houses Contest Entry Form</a></p>
 
     <p>Halloween is upon us, Gilberts, and the ghosts are calling. Will your home be the one that leaves an everlasting chill in the air? Embrace the spirit, and let the haunting begin!  </p>
+
+    <!-- Sponsors Section -->
+    <div class="sponsor-section">
+        <h2>Our Sponsors</h2>
+
+        <!-- Sponsor 1 -->
+        <div class="sponsor">
+            <a href="https://pub72.com/">
+                <img src="https://github.com/GilbertsGhostly/Gilberts-Haunted-Houses-Contest-Tour/blob/main/biggerpub72.jpg?raw=true" alt="Pub 72 Logo">
+                <p>Pub 72: Providing spooktacular support!</p>
+            </a>
+        </div>
+
+        <!-- Sponsor 2 -->
+        <div class="sponsor">
+            <a href="https://cruisingilberts.com/">
+                <img src="https://github.com/GilbertsGhostly/Gilberts-Haunted-Houses-Contest-Tour/blob/main/biggerCru.jpg?raw=true" alt="Crusin' Logo">
+                <p>Crusin': Making Halloween magic happen!</p>
+            </a>
+        </div>
+
+        <!-- Repeat the above structure for each sponsor -->
+        <!-- Sponsor 3, Sponsor 4, Sponsor 5, etc. -->
+    </div>
+
 </body>
 </html>
-
-</head>
-<body>
-    <!-- Your existing content -->
-    
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #001f3f; /* Dark blue background color */
-        color: #ff8c00; /* Halloween orange text color */
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    h1 {
-        color: #ff8c00;
-    }
-    p {
-        line-height: 1.5;
-    }
-    a {
-        color: #4285f4;
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-
-    /* Added styles for sponsors section */
-    .sponsor-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        text-align: center; /* Center-align the sponsors */
-    }
-
-    .sponsor {
-        width: 48%; /* Adjust the width as needed */
-        box-sizing: border-box;
-        margin-bottom: 2%; /* Adjust the margin as needed */
-    }
-
-    .sponsor img {
-        width: 100%; /* Make sure the image takes 100% width of its container */
-        max-width: 100%; /* Ensure the image doesn't exceed its natural size */
-        height: auto; /* Maintain the aspect ratio */
-    }
-
-    @media (max-width: 600px) {
-        .sponsor {
-            width: 100%; /* Make the sponsors take full width on smaller screens */
-        }
-    }
-</style>
