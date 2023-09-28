@@ -99,12 +99,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        text-align: center; /* Center-align the sponsors */
     }
 
     .sponsor {
         width: 48%; /* Adjust the width as needed */
         box-sizing: border-box;
         margin-bottom: 2%; /* Adjust the margin as needed */
+    }
+
+    @media (max-width: 600px) {
+        .sponsor {
+            width: 100%; /* Make the sponsors take full width on smaller screens */
+        }
     }
 </style>
 
