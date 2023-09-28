@@ -36,23 +36,27 @@
             text-align: center; /* Center-align the sponsors */
         }
 
-        .sponsor {
-            width: 48%; /* Adjust the width as needed */
-            box-sizing: border-box;
-            margin-bottom: 2%; /* Adjust the margin as needed */
-        }
+       .sponsor {
+    width: 48%; /* Adjust the width as needed */
+    box-sizing: border-box;
+    margin-bottom: 2%; /* Adjust the margin as needed */
+    display: inline-block; /* Ensures the logos appear next to each other */
+    vertical-align: middle; /* Align logos vertically */
+}
 
-        .sponsor img {
-            width: 50%; /* Make sure the image takes 100% width of its container */
-            max-width: 75%; /* Ensure the image doesn't exceed its natural size */
-            height: auto; /* Maintain the aspect ratio */
-        }
+.sponsor img {
+    width: 100%; /* Make sure the image takes 100% width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing or alignment issues */
+    margin: 0 auto; /* Center the image horizontally */
+}
 
-        @media (max-width: 600px) {
-            .sponsor {
-                width: 100%; /* Make the sponsors take full width on smaller screens */
-            }
-        }
+@media (max-width: 600px) {
+    .sponsor {
+        width: 100%; /* Make the sponsors take full width on smaller screens */
+        margin-bottom: 5%; /* Adjust the margin as needed for smaller screens */
+    }
+}
     </style>
 </head>
 <body>
