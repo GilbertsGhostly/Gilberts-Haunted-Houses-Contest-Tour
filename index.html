@@ -68,27 +68,52 @@
 <body>
     <!-- Your existing content -->
     
-  <!-- Sponsors Section -->
-<div class="sponsor-section">
-    <h2>Our Sponsors</h2>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #001f3f; /* Dark blue background color */
+        color: #ff8c00; /* Halloween orange text color */
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        color: #ff8c00;
+    }
+    p {
+        line-height: 1.5;
+    }
+    a {
+        color: #4285f4;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 
-    <!-- Sponsor 1 -->
-    <div class="sponsor">
-        <a href="https://pub72.com/">
-            <img src="https://github.com/GilbertsGhostly/Gilberts-Haunted-Houses-Contest-Tour/blob/main/biggerpub72.jpg?raw=true">
-            <p>Pub 72: Providing spooktacular support!</p>
-        </a>
-    </div>
+    /* Added styles for sponsors section */
+    .sponsor-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center; /* Center-align the sponsors */
+    }
 
-    <!-- Sponsor 2 -->
-    <div class="sponsor">
-        <a href="https://cruisingilberts.com/">
-            <img src="https://github.com/GilbertsGhostly/Gilberts-Haunted-Houses-Contest-Tour/blob/main/biggerCru.jpg?raw=true">
-            <p>Crusin': Making Halloween magic happen!</p>
-        </a>
-    </div>
+    .sponsor {
+        width: 48%; /* Adjust the width as needed */
+        box-sizing: border-box;
+        margin-bottom: 2%; /* Adjust the margin as needed */
+    }
 
-    <!-- Repeat the above structure for each sponsor -->
-    <!-- Sponsor 3, Sponsor 4, Sponsor 5, etc. -->
+    .sponsor img {
+        width: 100%; /* Make sure the image takes 100% width of its container */
+        max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+        height: auto; /* Maintain the aspect ratio */
+    }
 
-</div>
+    @media (max-width: 600px) {
+        .sponsor {
+            width: 100%; /* Make the sponsors take full width on smaller screens */
+        }
+    }
+</style>
